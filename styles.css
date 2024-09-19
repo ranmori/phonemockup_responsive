@@ -1,0 +1,296 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(251,251,250,255);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  justify-content:center;
+    min-height: 100vh; /* Adjust the height to make the entire container smaller */
+}
+
+.gradient-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 92%;
+    width: 50%;
+    clip-path: ellipse(100% 95% at 30% 0);
+    background: linear-gradient(90deg, hsla(267, 100%, 61%, 1) 0%, hsla(280, 99%, 62%, 1) 100%);
+    z-index: -2;
+}
+
+.phone-mockup {
+    position: relative;
+    width: 210px; /* Reduce the width */
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 30px; /* Reduce the border radius */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly smaller shadow */
+    margin-left: 220px; /* Adjust margin to center */
+   margin-right:100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brove {
+    position: absolute;
+    top: 10px; /* Move up */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px; /* Reduce width */
+    height: 15px; /* Reduce height */
+    background: white;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker {
+    width: 50px; /* Smaller speaker */
+    height: 4px;
+    background: #d2d2d2;
+    border-radius: 20px;
+}
+
+.screen {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px 10px; /* Adjust padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-header {
+   background: linear-gradient(90deg, hsla(282, 99%, 63%, 1) 0%, hsla(269, 100%, 61%, 1) 100%);
+
+    padding:  8px ; /* Adjust padding */
+  padding-top:14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+   font-size:9px;
+    border-radius: 15px  15px 5px 5px; /* Adjust border radius */
+}
+.mini{
+  font-size:4px;
+}
+
+.profile-pic {
+    width: 25px; 
+    height: 25px;
+    background-color: #333;
+    border-radius: 50%;
+}
+.fa-ellipsis-vertical{
+  margin-left:60px;
+  
+}
+.chat-body {
+    flex-grow: 1;
+    padding: 10px 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    font-size: 8px; /* Smaller font size */
+}
+
+.received {
+    align-items: flex-start;
+    background-color: #ede4f5;
+  color:#ae3efa;
+  border-radius: 8px 8px 8px 0px;
+    padding: 4px 8px;
+    
+}
+
+
+.sent {
+    align-items: flex-end;
+    margin-left: auto;
+    background-color: #f4f2f8;
+    padding: 4px 8px; /* Adjust padding */
+    border-radius: 8px 8px 0px 8px; 
+}
+.sent1{
+   align-items: flex-end;
+    margin-left: auto;
+}
+
+.images {
+   background:none;
+    display: flex;
+    gap: 10px;
+  
+}
+
+.images img {
+    width: 30px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+.option {
+ background: linear-gradient(90deg, hsla(282, 99%, 63%, 1) 0%, hsla(269, 100%, 61%, 1) 100%);
+
+    color: white;
+   align-items: flex-start;
+  border-radius: 8px 8px 8px 0px;
+    padding: 8px 4px;
+   border:none;
+    cursor: pointer;
+    margin-top: 4px;
+    font-size: 6px;
+}
+.mini-option{
+   font-size: 8px;
+  align-items:flex-end;
+  margin-left:25px;
+}
+
+.chat-input {
+    padding: 8px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative; /* Add this */
+}
+
+.chat-input input {
+    width: 100%;
+    border: none;
+    padding: 8px 40px 8px 8px;
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+.input-btn {
+    position: absolute;
+    right: 12px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.input-btn i {
+    font-size: 10px;
+    color: #666;
+   padding:7px 9px;
+  text-align:center;
+  color:white;
+  background:#3c2a52;
+  border-radius:50%;
+}
+
+
+.text-section {
+
+    margin-left: 20px; /* Reduce margin */
+  margin-right:80px;
+  flex-wrap:wrap;
+   max-width: 500px; 
+    overflow: hidden; /
+   
+}
+
+.text-section h1 {
+    font-size: 28px;
+   color:#3f304b;
+}
+
+.text-section p {
+  
+   font-size: 16px; /* Increase font size for better readability */
+    color: #a9a3af;
+    line-height: 1.7em; /* Adjust line height for readability */
+    text-align: left; /* Ensure text is aligned left */
+    margin: 15px 0; /* Add spacing between paragraphs */
+    max-width: 100%; /* Ensure the text wraps properly */
+}
+
+.gradient-b {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 90%;
+    width: 30%;
+    clip-path: ellipse(88% 100% at 60% 100%);
+    background: rgba(249,244,250,255);
+    z-index: -2;
+}
+
+@media screen and (max-width: 600px)  {
+  body{
+    flex-direction:column;
+     align-items: center;
+    padding: 0;
+    justify-content:center;
+  }
+   .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+  }
+  .phone-mockup {
+    margin: 20px auto;
+    z-index: 1; 
+    position: relative; /* Adjust position for layering */
+  }
+  .gradient-bg {
+    position: absolute;
+    top: 0;
+    left: -38%;
+    width: 160px; 
+    height: 100%; 
+    clip-path: ellipse(100% 100% at 20% 0); 
+    background: linear-gradient(90deg, hsla(267, 100%, 61%, 1) 0%, hsla(280, 99%, 62%, 1) 100%);
+    z-index: 0;
+  }
+  
+ 
+  .gradient-b {
+    display: none; /* Hide the background gradients on mobile for simplicity */
+  }
+  .text-section {
+    margin: 20px 0; /* Add some margin on mobile */
+    text-align: center; /* Center the text for a cleaner mobile view */
+    padding: 0 15px;
+  }
+.text-section h1 {
+    font-size: 24px; /* Slightly smaller heading on mobile */
+  }
+
+  .text-section p {
+    font-size: 12px;
+    text-align:center;
+    margin:10px;
+    
+  }
+}
